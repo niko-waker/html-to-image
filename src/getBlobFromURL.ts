@@ -50,7 +50,7 @@ export default function getBlobFromURL(
         mode: 'cors',
         cache: 'no-cache',
         credentials: 'same-origin',
-        headers: { 'Content-Type': 'application/json' }
+        headers: { 'Content-Type': 'application/json' },
     })
       .then(response => response.blob())
       .then(blob => new Promise((resolve, reject) => {
